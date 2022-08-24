@@ -1,5 +1,11 @@
+import Button from "@mui/material/Button";
+
 const App = () => {
-  return <div>Hello World!</div>;
+  return (
+    <Button variant="contained" sx={{ mt: "20px" }}>
+      Hello World
+    </Button>
+  );
 };
 
 export default App;
