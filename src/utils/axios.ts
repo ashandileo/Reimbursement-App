@@ -34,7 +34,7 @@ axiosInstance.interceptors.request.use((config) => {
 
 const onSuccess = (response: any) => {
   return {
-    data: camelizeKeys(response.data.data),
+    data: camelizeKeys(response.data.results),
     meta: camelizeKeys(response.data.meta),
     statusCode: response.status,
     isSuccess: true,
